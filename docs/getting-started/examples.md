@@ -21,7 +21,7 @@ with Diagram("Grouped Workers", show=False, direction="TB"):
                   EC2("worker5")] >> RDS("events")
 ```
 
-![grouped workers diagram](/img/grouped_workers_diagram.png)
+![grouped workers diagram](/assets/img/grouped_workers.png)
 
 ## Clustered Web Services
 
@@ -52,7 +52,7 @@ with Diagram("Clustered Web Services", show=False):
     svc_group >> memcached
 ```
 
-![clustered web services diagram](/img/clustered_web_services_diagram.png)
+![clustered web services diagram](/assets/img/clustered_web_services.png)
 
 ## Event Processing on AWS
 
@@ -87,7 +87,7 @@ with Diagram("Event Processing", show=False):
     handlers >> dw
 ```
 
-![event processing diagram](/img/event_processing_diagram.png)
+![event processing diagram](/assets/img/event_processing.png)
 
 ## Message Collecting System on GCP
 
@@ -125,7 +125,7 @@ with Diagram("Message Collecting", show=False):
     pubsub >> flow
 ```
 
-![message collecting diagram](/img/message_collecting_diagram.png)
+![message collecting diagram](/assets/img/message_collecting.png)
 
 ## Exposed Pod with 3 Replicas on Kubernetes
 
@@ -143,7 +143,7 @@ with Diagram("Exposed Pod with 3 Replicas", show=False):
 
 ```
 
-![exposed pod with 3 replicas diagram](/img/exposed_pod_with_3_replicas_diagram.png)
+![exposed pod with 3 replicas diagram](/assets/img/exposed_pod_with_3_replicas.png)
 
 ## Stateful Architecture on Kubernetes
 
@@ -168,7 +168,7 @@ with Diagram("Stateful Architecture", show=False):
     apps << PV("pv") << StorageClass("sc")
 ```
 
-![stateful architecture diagram](/img/stateful_architecture_diagram.png)
+![stateful architecture diagram](/assets/img/stateful_architecture.png)
 
 ## Advanced Web Service with On-Premise
 
@@ -211,7 +211,7 @@ with Diagram("Advanced Web Service with On-Premise", show=False):
     ingress >> grpcsvc >> aggregator
 ```
 
-![advanced web service with on-premise diagram](/img/advanced_web_service_with_on-premise.png)
+![advanced web service with on-premise diagram](/assets/img/advanced_web_service_with_on-premise.png)
 
 ## Advanced Web Service with On-Premise (with colors and labels)
 
@@ -254,7 +254,7 @@ with Diagram(name="Advanced Web Service with On-Premise (colored)", show=False):
     ingress >> Edge(color="darkgreen") << grpcsvc >> Edge(color="darkorange") >> aggregator
 ```
 
-![advanced web service with on-premise diagram colored](/img/advanced_web_service_with_on-premise_colored.png)
+![advanced web service with on-premise diagram colored](/assets/img/advanced_web_service_with_on-premise_(colored).png)
 
 ## RabbitMQ Consumers with Custom Nodes
 
@@ -283,4 +283,4 @@ with Diagram("Broker Consumers", show=False):
     queue >> consumers >> Aurora("Database")
 ```
 
-![rabbitmq consumers diagram](/img/rabbitmq_consumers_diagram.png)
+![rabbitmq consumers diagram](/assets/img/broker_consumers.png)
